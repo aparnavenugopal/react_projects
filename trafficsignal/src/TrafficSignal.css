@@ -1,0 +1,39 @@
+/* Container for the traffic signal */
+.traffic-signal {
+  width: 100px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Individual light */
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+/* Red light */
+.red {
+  background-color: #ff0000;
+}
+
+/* Yellow light */
+.yellow {
+  background-color: #ffff00;
+}
+
+/* Green light */
+.green {
+  background-color: #00ff00;
+}
+
+/* Active light */
+.active {
+  border-width: 6px; /* Increase border width to highlight the active light */
+}
