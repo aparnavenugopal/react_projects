@@ -9,6 +9,7 @@ export const TabProvider = ({ children }) => {
     const [activeTab, setActiveTab] = useState('profile');
     const [interest, setInterest] = useState('');
     const [subscribe, setSubscribe] = useState(false);
+    const [notificationPreference, setNotificationPreference] = useState('email');
 
 
     return (
@@ -23,7 +24,9 @@ export const TabProvider = ({ children }) => {
               interest,
               setInterest,
               subscribe,
-              setSubscribe
+              setSubscribe,
+              notificationPreference,
+              setNotificationPreference
             }
         }>
            {children}
