@@ -3,6 +3,7 @@ import { Profile } from './Tabs/Profile'
 import Interest from './Tabs/Interest'
 import Settings from './Tabs/Settings'
 import { useTab } from './TabContext'
+import  './multiTabs.css'
 
 export const MultiTabs = () => {
   const { activeTab, setActiveTab} = useTab();
@@ -23,13 +24,13 @@ export const MultiTabs = () => {
   return (
     <>
      <h1>MultiTab Form</h1>
-     <button onClick={() => setActiveTab('profile')}>
+     <button onClick={() => setActiveTab('profile')} className={`tab ${activeTab === 'profile' ? 'activetab' : ''}`}>
          Profile
      </button>
-     <button onClick={() => setActiveTab('interest')}>
+     <button onClick={() => setActiveTab('interest')} className={`tab ${activeTab == 'interest' ? 'activetab' : ''}`}>
           Interest
      </button>
-     <button onClick= {() => setActiveTab('settings')}>
+     <button onClick= {() => setActiveTab('settings')} className={`tab ${activeTab === 'settings' ? 'activetab' : ''}`}>
           Settings  
      </button>
      {renderTab()}

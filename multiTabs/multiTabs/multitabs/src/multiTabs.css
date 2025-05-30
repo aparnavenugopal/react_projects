@@ -1,0 +1,70 @@
+.tab{
+    padding: 5px;
+    margin: 20px;
+}
+
+.activetab{
+    background-color:darkslateblue;
+    color:azure;
+    border-radius: 5px;
+}
+
+.profileParent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fieldRow{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.errorText{
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.nextButton{
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    width:auto;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3 ease;
+    margin-top: 10px;
+}
+.interest{
+    display:flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 4px;
+    margin: 5px;
+}
+
+.horizontalContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribeCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submitButton{
+    background-color:darkgreen;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
