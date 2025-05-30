@@ -1,0 +1,43 @@
+.accordion-section {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.accordion-title {
+  cursor: pointer;
+}
+
+.accordion-title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.accordion-content {
+  margin-top: 12px;
+  padding-left: 8px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.submit-button:disabled {
+  background-color: #4481d0;
+  cursor: not-allowed;
+}
